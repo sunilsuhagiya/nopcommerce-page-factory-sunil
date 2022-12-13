@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - smoke Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>smoke Test</h1>
+<p>
+  Test duration: 88.905s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.ComputerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductAddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    28.271s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        selectMenu
+                                Click on desktop[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> link text: Desktops]
+                                Select Sort By Name[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> name: products-orderby]
+                                Click On Add To Cart[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //body/div[6]/div[3]/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/img[1]]
+                                Get Text Message[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //h1[contains(text(),'Build your own computer')]]
+                                Select on Processor Name[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> name: product_attribute_1]
+                                Select Ram[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> name: product_attribute_2]
+                                Select HDD[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //input[@id='product_attribute_3_7']]
+                                Select OS[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //input[@id='product_attribute_4_9']]
+                                Select software[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //input[@id='product_attribute_5_12']]
+                                Verify Price[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //span[text() = '$1,475.00']]
+                                Click on Cart Button[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //button[@id='add-to-cart-button-1']]
+                                Verify Message on Top Green Bar[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //body[1]/div[5]/div[1]/p[1]]
+                                Click on Close Bar[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //body[1]/div[5]/div[1]/span[1]]
+                                Mouse Hover On Shopping Cart[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //span[contains(text(),'Shopping cart')]]
+                                Click On Shopping Cart[[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -> xpath: //button[contains(text(),'Go to cart')]]
+                                Click to see screenshot
+                                <a target = "_blank" href=C:\Users\sunil\IdeaProjects\nopcommerce-page-factory-sunil/test-output/html/verifyProductAddedToShoppingCartSuccessFullyTue_Dec_13_23_13_18_AEST_2022.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target = "_blank" href=C:\Users\sunil\IdeaProjects\nopcommerce-page-factory-sunil/test-output/html/verifyProductAddedToShoppingCartSuccessFullyTue_Dec_13_23_13_18_AEST_2022.jpg><img src=C:\Users\sunil\IdeaProjects\nopcommerce-page-factory-sunil/test-output/html/verifyProductAddedToShoppingCartSuccessFullyTue_Dec_13_23_13_18_AEST_2022.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotInteractableException: element not interactable<br/>
+&nbsp; (Session info: chrome=108.0.5359.99)<br/>
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [88383d3e745bd31af2e9be64eab7e709, clickElement {id=5ca0bf53-5513-4175-acca-2b2dbe2d4c46}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\sunil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55645/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on WINDOWS (88383d3e745bd31af2e9be64eab7e709)] -&gt; xpath: //button[contains(text(),&apos;Go to cart&apos;)]]<br/>
+Session ID: 88383d3e745bd31af2e9be64eab7e709</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)<br />
+              sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)<br />
+              com.sun.proxy.$Proxy15.click(Unknown Source)<br />
+              com.nopcommerce.demo.utility.Utility.clickOnElement(Utility.java:67)<br />
+              com.nopcommerce.demo.pages.BuildYourOwnComputerPage.clickOnShoppingCart(BuildYourOwnComputerPage.java:129)<br />
+              com.nopcommerce.demo.testsuite.ComputerTest.verifyProductAddedToShoppingCartSuccessFully(ComputerTest.java:71)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.ElectronicsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfully
+      </td>
+  <td class="duration">
+    47.668s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Mouse Hover On Electronics[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //div/ul[@class='top-menu notmobile']/li[2]/a[@href='/electronics']]
+                                Click On Cell Phone[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //body[1]/div[6]/div[2]/ul[1]/li[2]/ul[1]/li[2]/a[1]]
+                                Get Text cell Phones[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //div[@class='page-title']/h1[text() = 'Cell phones']]
+                                Click On List View[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //div/a[text()='List']]
+                                Click On Nokia Lumia[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //h2/a[text()='Nokia Lumia 1020']]
+                                Verify Nokia Lumia Text[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //h1[contains(text(),'Nokia Lumia 1020')]]
+                                Verify Nokia Price[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //span[@id='price-value-20']]
+                                Change Quantity
+                                Click on Cart[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> css selector: #add-to-cart-button-20]
+                                Product Added To The Cart Message[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //body/div[@id='bar-notification']/div[1]/p[1]]
+                                Click on Cross Button[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //body/div[@id='bar-notification']/div[1]/span[1]]
+                                Click on Shopping cart link[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //button[contains(text(),'Go to cart')]]
+                                Verify shopping cart text[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //div[@class='page-title']/h1[contains(text(),'Shopping cart')]]
+                                verify Product Quantity[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //td[@class='quantity']/child::input]
+                                Verify total Price[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //tbody/tr[1]/td[6]/span[1]]
+                                Click Term Of Services[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //tbody/tr[1]/td[6]/span[1]]
+                                Click On Check out[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //button[@id='checkout']]
+                                Verify WelCome Text[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //h1[text()='Welcome, Please Sign In!']]
+                                click On As Register Button[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //button[contains(text(),'Register')]]
+                                verify Register Text[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> xpath: //h1[contains(text(),'Register')]]
+                                Enter First Name[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> id: FirstName]
+                                Enter Last Name[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> id: LastName]
+                                Enter Email[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> id: Email]
+                                Enter Password[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> id: Password]
+                                Enter Confirm Password[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> id: ConfirmPassword]
+                                Click on Register button[[ChromeDriver: chrome on WINDOWS (dcae3a5b5d54f25ac99c73d5bdcb840b)] -> id: register-button]
+                                Registration Page TextProxy element for: DefaultElementLocator 'By.xpath: //div[contains(text(),'Your registration completed')]'
+                                Click to see screenshot
+                                <a target = "_blank" href=C:\Users\sunil\IdeaProjects\nopcommerce-page-factory-sunil/test-output/html/verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfullyTue_Dec_13_23_12_41_AEST_2022.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target = "_blank" href=C:\Users\sunil\IdeaProjects\nopcommerce-page-factory-sunil/test-output/html/verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfullyTue_Dec_13_23_12_41_AEST_2022.jpg><img src=C:\Users\sunil\IdeaProjects\nopcommerce-page-factory-sunil/test-output/html/verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfullyTue_Dec_13_23_12_41_AEST_2022.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Your registration completed&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=108.0.5359.99)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [dcae3a5b5d54f25ac99c73d5bdcb840b, findElement {using=xpath, value=//div[contains(text(),&apos;Your registration completed&apos;)]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\sunil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55449/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: dcae3a5b5d54f25ac99c73d5bdcb840b</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy15.getText(Unknown Source)<br />
+              com.nopcommerce.demo.utility.Utility.getTextFromElement(Utility.java:78)<br />
+              com.nopcommerce.demo.pages.RegisterPage.verifyRegistrationText(RegisterPage.java:84)<br />
+              com.nopcommerce.demo.testsuite.ElectronicsTest.verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfully(ElectronicsTest.java:80)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.HomePageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyPageNavigationElectronics
+      </td>
+  <td class="duration">
+    0.492s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        selectMenu
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
